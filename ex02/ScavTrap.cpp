@@ -1,5 +1,4 @@
 #include "ScavTrap.hpp"
-#include "ClapTrap.hpp"
 
 ScavTrap::ScavTrap() : ClapTrap() {
   std::cout << "ScavTrap Default constructor called" << std::endl;
