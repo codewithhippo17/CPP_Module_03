@@ -8,19 +8,19 @@ ScavTrap::ScavTrap() : ClapTrap() {
 }
 
 ScavTrap::ScavTrap(std::string name) : ClapTrap(name) {
-  std::cout << "Parameterized constructor of ScavTrap called\n";
+  std::cout << "ScavTrap Parameterized constructor called\n";
   this->Hitpoint = 100;
   this->Attackdamage = 50;
   this->Energypoint = 20;
 }
 
 ScavTrap::ScavTrap(const ScavTrap &other) : ClapTrap(other) {
-  std::cout << "Copy constructor called" << std::endl;
+  std::cout << "ScavTrap Copy constructor called" << std::endl;
   *this = other;
 }
 
 ScavTrap &ScavTrap::operator=(const ScavTrap &other) {
-  std::cout << "Copy assignment operator of ScavTrap called" << std::endl;
+  std::cout << "ScavTrap Copy assignment operator called" << std::endl;
   if (this != &other) {
     this->name = other.name;
     this->Hitpoint = other.Hitpoint;
@@ -31,7 +31,7 @@ ScavTrap &ScavTrap::operator=(const ScavTrap &other) {
 }
 
 ScavTrap::~ScavTrap() {
-  std::cout << "Destructor of ScavTrap called" << std::endl;
+  std::cout << "ScavTrap Destructor called" << std::endl;
 }
 
 void ScavTrap::attack(const std::string &target) {
